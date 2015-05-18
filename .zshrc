@@ -17,7 +17,7 @@ setopt NO_FLOW_CONTROL
 setopt NO_BEEP
 #補完候補が２つ以上の場合、選択出来るようにする
 zstyle ':completion:*:default' menu select=2
-#ll alias 
+#ll alias
 alias ll='ls -la'
 #MAMPのpath
 PATH=$PATH:/Applications/MAMP/Library/bin
@@ -34,6 +34,9 @@ PATH=$PATH:/Applications/MAMP/Library/bin
 #    *) ;; # OSがMac以外ならば何もしない
 #esac
 #if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+#nodebrew用の環境PATH
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 #######################################
 # Color
@@ -59,7 +62,7 @@ alias v='vim'
 alias t='tree'
 alias c='cat -n'
 alias l='ls -a'
- 
+
 alias vi='vim'
 alias ll='ls -al'
 alias log='tail -f 5'
@@ -67,6 +70,13 @@ alias g='git'
 alias gs='git status'
 alias gl='git log'
 alias rm='rm -i'
- 
-# sublime
-alias s="subl"
+alias cfx='~/Desktop/works/firefox/addon-sdk-1.17/bin/cfx'
+
+alias subL="open -a /Applications/Sublime\ Text.app"
+alias chrome="open -a /Applications/Google\ Chrome.app"
+alias Stree="open -a /Applications/SourceTree.app"
+alias Ffox="open -a /Applications/Firefox.app"
+alias MAMP="open /Applications/MAMP"
+alias Fdev="open -a /Applications/FirefoxDeveloperEdition.app"
+
+alias htdocs="/Applications/MAMP/htdocs"
