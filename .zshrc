@@ -78,5 +78,5 @@ alias Stree="open -a /Applications/SourceTree.app"
 alias Ffox="open -a /Applications/Firefox.app"
 alias MAMP="open /Applications/MAMP"
 alias Fdev="open -a /Applications/FirefoxDeveloperEdition.app"
-
+alias homestead="~/.composer/vendor/bin/homestead"
 alias htdocs="/Applications/MAMP/htdocs"
