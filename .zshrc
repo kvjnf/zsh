@@ -17,8 +17,6 @@ setopt NO_FLOW_CONTROL
 setopt NO_BEEP
 #補完候補が２つ以上の場合、選択出来るようにする
 zstyle ':completion:*:default' menu select=2
-#ll alias
-alias ll='ls -la'
 #MAMPのpath
 PATH=$PATH:/Applications/MAMP/Library/bin
 #macvimの場合にalias vimにmacvimを設定
@@ -53,6 +51,10 @@ export CLICOLOR=true
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 #######################################
+# php homebrewの設定
+#######################################
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+#######################################
 # Alias
 #######################################
 alias his='history'
@@ -62,7 +64,7 @@ alias v='vim'
 alias t='tree'
 alias c='cat -n'
 alias l='ls -a'
-
+alias ll='ls -la'
 alias vi='vim'
 alias ll='ls -al'
 alias log='tail -f 5'
@@ -78,5 +80,6 @@ alias Stree="open -a /Applications/SourceTree.app"
 alias Ffox="open -a /Applications/Firefox.app"
 alias MAMP="open /Applications/MAMP"
 alias Fdev="open -a /Applications/FirefoxDeveloperEdition.app"
-
+alias Atom="open -a /Applications/Atom.app"
 alias htdocs="/Applications/MAMP/htdocs"
+alias beans="open -a /Applications/NetBeans/NetBeans\ 8.0.2.app"
